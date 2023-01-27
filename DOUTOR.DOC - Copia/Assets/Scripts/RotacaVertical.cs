@@ -1,0 +1,34 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class RotacaVertical : MonoBehaviour
+{
+    private Rigidbody Cabeca;
+    public float verticalSpeed;
+    [SerializeField()] Vector3 rotacion = new Vector3(0, 0, 0);
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        Cabeca = GetComponent<Rigidbody>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.W))
+        {
+            transform.Rotate(-verticalSpeed, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.Rotate(verticalSpeed, 0, 0);
+        }
+        if (Input.GetKey(KeyCode.Q))
+        {
+            transform.rotation = Quaternion.Euler(rotacion);
+        }
+
+    }
+}
