@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement; 
 using UnityEngine.UI;
 
-public class upright : MonoBehaviour
+public class upLeft : MonoBehaviour
 {
-    public GameObject campodeSenha;
+    //public GameObject campodeSenha;
     //bool control = true; 
-    string Code = "MEMBRANA"; 
+    string Code = "SPIKE"; 
     string Letra = null; 
     int LetraIndex = 0; 
     string Alpha; 
@@ -52,7 +52,6 @@ public class upright : MonoBehaviour
         yield return new WaitForSeconds(1f); 
         Door.SetBool("Open", false);
         Door.enabled = false; 
-        campodeSenha.SetActive(false);
+        //campodeSenha.SetActive(false);
     }
 }
-
