@@ -4,11 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement; 
 using UnityEngine.UI;
 
-public class upLeft : MonoBehaviour
+
+public class downLeft : MonoBehaviour
 {
-    //public GameObject campodeSenha;
+//public GameObject campodeSenha;
     //bool control = true; 
-    string Code = "NITROGENADA"; 
+    string Code = "SPIKE"; 
     string Letra = null; 
     int LetraIndex = 0; 
     string Alpha; 
