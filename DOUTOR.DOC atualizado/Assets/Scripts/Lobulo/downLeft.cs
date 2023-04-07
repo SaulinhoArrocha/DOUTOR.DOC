@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class downLeft : MonoBehaviour
 {
-//public GameObject campodeSenha;
+    public GameObject campodeSenha;
     //bool control = true; 
     string Code = "SPIKE"; 
     string Letra = null; 
@@ -53,6 +53,6 @@ public class downLeft : MonoBehaviour
         yield return new WaitForSeconds(1f); 
         Door.SetBool("Open", false);
         Door.enabled = false; 
-       // campodeSenha2.SetActive(false);
+        campodeSenha.SetActive(false);
     }
 }

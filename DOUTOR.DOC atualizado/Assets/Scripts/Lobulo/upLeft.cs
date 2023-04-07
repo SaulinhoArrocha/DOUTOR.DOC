@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class upLeft : MonoBehaviour
 {
-    //public GameObject campodeSenha;
+    public GameObject campodeSenha;
     //bool control = true; 
     string Code = "NITROGENADA"; 
     string Letra = null; 
@@ -52,6 +52,6 @@ public class upLeft : MonoBehaviour
         yield return new WaitForSeconds(1f); 
         Door.SetBool("Open", false);
         Door.enabled = false; 
-       // campodeSenha2.SetActive(false);
+        campodeSenha.SetActive(false);
     }
 }
