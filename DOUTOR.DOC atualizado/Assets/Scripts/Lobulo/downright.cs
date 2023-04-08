@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class downright : MonoBehaviour
 {
     public GameObject campodeSenha;
+    public GameObject acessoLobuloID; 
     //bool control = true; 
     string Code = "PROTEINA"; 
     string Letra = null; 
@@ -54,5 +55,6 @@ public class downright : MonoBehaviour
         Door.SetBool("Open", false);
         Door.enabled = false; 
         campodeSenha.SetActive(false);
+        acessoLobuloID.SetActive(false); 
     }
 }

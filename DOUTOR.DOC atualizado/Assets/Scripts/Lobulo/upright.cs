@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class upright : MonoBehaviour
 {
     public GameObject campodeSenha;
+    public GameObject acessoLobuloSD; 
     //bool control = true; 
     string Code = "MEMBRANA"; 
     string Letra = null; 
@@ -53,6 +54,7 @@ public class upright : MonoBehaviour
         Door.SetBool("Open", false);
         Door.enabled = false; 
         campodeSenha.SetActive(false);
+        acessoLobuloSD.SetActive(false); 
     }
 }
 

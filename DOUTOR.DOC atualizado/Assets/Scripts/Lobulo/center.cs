@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class center : MonoBehaviour
 {
     public GameObject campodeSenha;
+    public GameObject acessoLobuloCentro; 
     //bool control = true; 
     string Code = "VACINA"; 
     string Letra = null; 
@@ -53,5 +54,6 @@ public class center : MonoBehaviour
         Door.SetBool("Open", false);
         Door.enabled = false; 
         campodeSenha.SetActive(false);
+        acessoLobuloCentro.SetActive(false); 
     }
 }
