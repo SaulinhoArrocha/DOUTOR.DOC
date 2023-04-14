@@ -54,6 +54,6 @@ public class center : MonoBehaviour
         Door.SetBool("Open", false);
         Door.enabled = false; 
         campodeSenha.SetActive(false);
-        acessoLobuloCentro.SetActive(false); 
+        Destroy(acessoLobuloCentro);
     }
 }

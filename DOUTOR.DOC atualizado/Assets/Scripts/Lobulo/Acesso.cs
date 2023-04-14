@@ -7,6 +7,8 @@ public class Acesso : MonoBehaviour
     bool mouseDentroDoObjeto;
     public delegate void AcessoLobulo();
     public static event AcessoLobulo OnEnemyDied;
+    
+
 
     // Update is called once per frame
 
@@ -19,12 +21,12 @@ public class Acesso : MonoBehaviour
     {
         if (mouseDentroDoObjeto == true)
         {
-            if(OnEnemyDied != null)
+            if (OnEnemyDied != null)
             {
                 if (Input.GetMouseButtonDown(0))
                 {
                     OnEnemyDied();
-                
+
                 }
 
             }

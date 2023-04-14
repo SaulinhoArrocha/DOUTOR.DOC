@@ -24,7 +24,8 @@ public class AcessoLID : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     LobuloLID();
-                
+
+
                 }
 
             }

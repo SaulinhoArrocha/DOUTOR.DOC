@@ -8,6 +8,7 @@ public class AcessoLSE : MonoBehaviour
     public delegate void AcessoLobulo();
     public static event AcessoLobulo LobuloSE;
 
+
     // Update is called once per frame
 
     void Start()
@@ -24,7 +25,7 @@ public class AcessoLSE : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     LobuloSE();
-                
+
                 }
 
             }

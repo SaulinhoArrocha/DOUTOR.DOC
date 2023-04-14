@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class upLeft : MonoBehaviour
 {
     public GameObject campodeSenha;
-    public GameObject acessoLobuloSE; 
+    public GameObject acessoLobuloSE;
+
     //bool control = true; 
     string Code = "NITROGENADA"; 
     string Letra = null; 
@@ -54,6 +55,6 @@ public class upLeft : MonoBehaviour
         Door.SetBool("Open", false);
         Door.enabled = false; 
         campodeSenha.SetActive(false);
-        acessoLobuloSE.SetActive(false); 
+        Destroy(acessoLobuloSE);
     }
 }

@@ -55,6 +55,6 @@ public class downright : MonoBehaviour
         Door.SetBool("Open", false);
         Door.enabled = false; 
         campodeSenha.SetActive(false);
-        acessoLobuloID.SetActive(false); 
+        Destroy(acessoLobuloID);
     }
 }

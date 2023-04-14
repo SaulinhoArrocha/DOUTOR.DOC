@@ -8,6 +8,7 @@ public class AcessoC : MonoBehaviour
     public delegate void AcessoLobulo();
     public static event AcessoLobulo LobuloC;
 
+
     // Update is called once per frame
 
     void Start()
@@ -24,7 +25,7 @@ public class AcessoC : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     LobuloC();
-                
+
                 }
 
             }

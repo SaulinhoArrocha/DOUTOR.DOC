@@ -8,6 +8,7 @@ public class AcessoLIE : MonoBehaviour
     public delegate void AcessoLobulo();
     public static event AcessoLobulo LobuloIE;
 
+
     // Update is called once per frame
 
     void Start()
@@ -24,7 +25,8 @@ public class AcessoLIE : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     LobuloIE();
-                
+
+
                 }
 
             }

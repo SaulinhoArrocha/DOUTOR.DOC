@@ -9,6 +9,7 @@ public class downLeft : MonoBehaviour
 {
     public GameObject campodeSenha;
     public GameObject acessoLobuloIE;
+
     //bool control = true; 
     string Code = "SPIKE"; 
     string Letra = null; 
@@ -55,6 +56,6 @@ public class downLeft : MonoBehaviour
         Door.SetBool("Open", false);
         Door.enabled = false; 
         campodeSenha.SetActive(false);
-        acessoLobuloIE.SetActive(false); 
+        Destroy(acessoLobuloIE);
     }
 }
