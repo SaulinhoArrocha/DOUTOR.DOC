@@ -13,6 +13,7 @@ public class AcessoC : MonoBehaviour
     public Transform kaypadID;
     public Transform kaypadIE;
     public Transform kaypadSE;
+    public Transform manualCovid;
 
 
     // Update is called once per frame
@@ -35,7 +36,7 @@ public class AcessoC : MonoBehaviour
             {
                 if (Input.GetMouseButtonDown(0))
                 {
-                    if ((kaypadSD.gameObject.activeSelf) || (kaypadID.gameObject.activeSelf) || (kaypadIE.gameObject.activeSelf) || (kaypadSE.gameObject.activeSelf))
+                    if ((kaypadSD.gameObject.activeSelf) || (kaypadID.gameObject.activeSelf) || (kaypadIE.gameObject.activeSelf) || (kaypadSE.gameObject.activeSelf) || (manualCovid.gameObject.activeSelf))
                     {
                         StartCoroutine("ImagemNaTela");
                     }

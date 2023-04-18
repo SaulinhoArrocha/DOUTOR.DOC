@@ -7,6 +7,7 @@ public class RotacaVertical : MonoBehaviour
     private Rigidbody Cabeca;
     public float verticalSpeed;
     [SerializeField()] Vector3 rotacion = new Vector3(0, 0, 0);
+    bool canVerticalMove = true;
 
     // Start is called before the first frame update
     void Start()
@@ -17,18 +18,26 @@ public class RotacaVertical : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (canVerticalMove)
         {
-            transform.Rotate(-verticalSpeed, 0, 0);
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.Rotate(verticalSpeed, 0, 0);
-        }
-        if (Input.GetKey(KeyCode.Q))
-        {
-            transform.rotation = Quaternion.Euler(rotacion);
+            if (Input.GetKey(KeyCode.W))
+            {
+                transform.Rotate(-verticalSpeed, 0, 0);
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                transform.Rotate(verticalSpeed, 0, 0);
+            }
+            if (Input.GetKey(KeyCode.Q))
+            {
+                transform.rotation = Quaternion.Euler(rotacion);
+            }
         }
 
+    }
+
+    public void CancelCameraVertical(bool value)
+    {
+        canVerticalMove = value;
     }
 }

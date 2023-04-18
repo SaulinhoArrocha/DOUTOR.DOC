@@ -6,6 +6,7 @@ public class RotacaoHorizontal : MonoBehaviour
 {
     private Rigidbody player;
     public float RotSpeed;
+    bool canHorizontalMove = true;
 
     // Start is called before the first frame update
     void Start()
@@ -16,13 +17,21 @@ public class RotacaoHorizontal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.A))
+        if (canHorizontalMove)
         {
-            transform.Rotate(0, -RotSpeed, 0);
+            if (Input.GetKey(KeyCode.A))
+            {
+                transform.Rotate(0, -RotSpeed, 0);
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                transform.Rotate(0, RotSpeed, 0);
+            }
         }
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.Rotate(0, RotSpeed, 0);
-        }
+    }
+
+    public void CancelCamera(bool value)
+    {
+        canHorizontalMove = value;
     }
 }

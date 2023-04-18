@@ -13,6 +13,7 @@ public class Acesso : MonoBehaviour
     public Transform kaypadID;
     public Transform kaypadIE;
     public Transform kaypadC;
+    public Transform manualCovid;
 
 
 
@@ -36,7 +37,7 @@ public class Acesso : MonoBehaviour
             {
                 if (Input.GetMouseButtonDown(0))
                 {
-                    if ((kaypadSE.gameObject.activeSelf) || (kaypadID.gameObject.activeSelf) || (kaypadIE.gameObject.activeSelf) || (kaypadC.gameObject.activeSelf))
+                    if ((kaypadSE.gameObject.activeSelf) || (kaypadID.gameObject.activeSelf) || (kaypadIE.gameObject.activeSelf) || (kaypadC.gameObject.activeSelf) || (manualCovid.gameObject.activeSelf))
                     {
                         StartCoroutine("ImagemNaTela");
                     }
