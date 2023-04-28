@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class ColetarObjeto : MonoBehaviour
 {
-    public GameObject ativarObjeto; 
+    public GameObject ativarObjeto;
+
+    bool destruido = false;
 
     void OnMouseDown()
     {
         Destroy(gameObject); 
-        ativarObjeto.SetActive(true); 
+        ativarObjeto.SetActive(true);
+        destruido = true;
     }
 }
