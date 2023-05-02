@@ -10,6 +10,8 @@ public class CameraZoom : MonoBehaviour
     bool canMakeZoom = true;
 
     private bool isZoomed = false;
+    public GameObject ativaInventario;
+
 
     // Update is called once per frame
     void Update()
@@ -30,12 +32,14 @@ public class CameraZoom : MonoBehaviour
             if (isZoomed)
             {
                 GetComponent<Camera>().fieldOfView = Mathf.Lerp(GetComponent<Camera>().fieldOfView, zoom, Time.deltaTime * smooth);
+                ativaInventario.SetActive(false);
 
 
             }
             else
             {
                 GetComponent<Camera>().fieldOfView = Mathf.Lerp(GetComponent<Camera>().fieldOfView, normal, Time.deltaTime * smooth);
+                ativaInventario.SetActive(true);
             }
         }
     }

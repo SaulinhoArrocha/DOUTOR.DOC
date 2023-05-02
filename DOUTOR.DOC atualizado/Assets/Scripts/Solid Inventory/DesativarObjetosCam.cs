@@ -2,27 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProteinaMmala : MonoBehaviour
+public class DesativarObjetosCam : MonoBehaviour
 {
-    public GameObject envelopeCcamera, envelopeCamera, hemagluCamera, proteinaMcamera, proteinaSPcamera, rnaCamera, chaveCam, retratoCam, morcegoCam, mascaraCam, coroaCam;
 
-    private void OnMouseDown()
+    public GameObject envelopeCcamera, envelopeCamera, hemagluCamera, proteinaMcamera, proteinaSPcamera, rnaCamera, chaveCam, retratoCam, morcegoCam, mascaraCam, coroaCam;
+    private CameraZoom cameraZoom;
+
+
+    private void OnEnable()
     {
-        gameObject.SetActive(false);
+        cameraZoom = FindObjectOfType<CameraZoom>();
+        cameraZoom.CancelZoom(value: false);
     }
+
     private void OnDisable()
     {
-        proteinaMcamera.SetActive(true);
-        envelopeCcamera.SetActive(false);
+        chaveCam.SetActive(false);
+        envelopeCamera.SetActive(false);
         hemagluCamera.SetActive(false);
+        proteinaMcamera.SetActive(false);
         proteinaSPcamera.SetActive(false);
         rnaCamera.SetActive(false);
-        envelopeCamera.SetActive(false);
-        chaveCam.SetActive(false);
+        envelopeCcamera.SetActive(false);
         retratoCam.SetActive(false);
         morcegoCam.SetActive(false);
         mascaraCam.SetActive(false);
         coroaCam.SetActive(false);
 
+        cameraZoom = FindObjectOfType<CameraZoom>();
+        cameraZoom.CancelZoom(value: true);
     }
 }
