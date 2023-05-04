@@ -8,6 +8,7 @@ public class AtivarObjetos : MonoBehaviour
     public GameObject ativado; 
 
     private void OnMouseDown(){
+
         ativado.SetActive(true); 
     }
 }

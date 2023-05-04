@@ -86,7 +86,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -223,24 +223,24 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 334}
-      m_SelectedIDs: 30720000
-      m_LastClickedID: 29232
-      m_ExpandedIDs: fce9ffff7a6d000002700000d6700000
+      scrollPos: {x: 0, y: 286}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 16ccffff6ae4ffff8afaffffccfaffff26fbffff32fbffff4a5c00009c5c0000986000008e630000fc6300005e6400008e640000f26500005c660000c4660000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Morcego Mala
-        m_OriginalName: Morcego Mala
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -18100
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -503,9 +503,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.5466554, y: 9.425348, z: 3.290165}
+    m_Target: {x: -27.428326, y: 5.1245337, z: -85.769875}
     speed: 2
-    m_Value: {x: 0.5466554, y: 9.425348, z: 3.290165}
+    m_Value: {x: -27.428326, y: 5.1245337, z: -85.769875}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -552,13 +552,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.22483519, y: 0.01784579, z: -0.0040982724, w: 0.97423625}
+    m_Target: {x: -0.008620565, y: 0.9902265, z: -0.07173184, w: -0.11942352}
     speed: 2
-    m_Value: {x: 0.22483267, y: 0.017845592, z: -0.0040982263, w: 0.97422534}
+    m_Value: {x: -0.008620434, y: 0.9902115, z: -0.071730755, w: -0.11942171}
   m_Size:
-    m_Target: 4.669985
+    m_Target: 47.020325
     speed: 2
-    m_Value: 4.669985
+    m_Value: 47.020325
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -762,10 +762,10 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 186}
-    m_SelectedIDs: 8a7e0000
-    m_LastClickedID: 32394
-    m_ExpandedIDs: 00000000867e0000887e00008a7e00008c7e00008e7e00000847020000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 218}
+    m_SelectedIDs: 1c7e0000
+    m_LastClickedID: 32284
+    m_ExpandedIDs: 00000000187e00001a7e00001c7e00001e7e0000207e0000f87e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -793,7 +793,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000867e0000887e00008a7e00008c7e00008e7e0000
+    m_ExpandedIDs: 00000000187e00001a7e00001c7e00001e7e0000207e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -818,8 +818,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 30720000
-    m_LastClickedInstanceID: 29232
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -938,7 +938,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 162
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

@@ -28,7 +28,7 @@ public class Porta : MonoBehaviour
     public EstadoInic EstadoInicial = EstadoInic.Fechada00;
     public enum TipoDeRotacao { RodarEmX, RodarEmY, RodarEmZ };
     public TipoDeRotacao Rotacao = TipoDeRotacao.RodarEmY;
-    public KeyCode TeclaAbrir = KeyCode.E;
+    //public KeyCode TeclaAbrir = KeyCode.E;
     [Range(0.0f, 150.0f)] public float grausDeGiro = 90.0f;
     [Range(0.1f, 80.0f)] public float velocidadeDeGiro = 5, distanciaDaPorta = 3;
     public bool inverterGiro = false;
@@ -47,9 +47,13 @@ public class Porta : MonoBehaviour
     AudioSource emissorSom;
     Chaves listaDeChaves;
 
+    bool mouseDentroDoObjeto;
+
     // Start is called before the first frame update
     void Start()
     {
+        mouseDentroDoObjeto = false;
+
         rotacaoInicial = transform.eulerAngles;
         Jogador = GameObject.FindWithTag("Player");
         if (Jogador != null)
@@ -152,50 +156,58 @@ public class Porta : MonoBehaviour
         }
         if (Vector3.Distance(Jogador.transform.position, localDeChecagem) < distanciaDaPorta)
         {
-            if (Input.GetKeyDown(TeclaAbrir) && estaTrancada == false)
+            if(mouseDentroDoObjeto == true)
             {
-                estaFechada = !estaFechada;
-                //
-                if (estaFechada == false)
+                if (Input.GetMouseButtonDown(0) && estaTrancada == false)
                 {
-                    if (Sons.somAbrir != null)
+                    estaFechada = !estaFechada;
+                    //
+                    if (estaFechada == false)
                     {
-                        emissorSom.pitch = Sons.velSomAbrir;
-                        emissorSom.clip = Sons.somAbrir;
-                        emissorSom.PlayOneShot(emissorSom.clip);
-                    }
-                    if (inverterGiro == true)
-                    {
-                        giroAlvo = grausDeGiro;
+                        if (Sons.somAbrir != null)
+                        {
+                            emissorSom.pitch = Sons.velSomAbrir;
+                            emissorSom.clip = Sons.somAbrir;
+                            emissorSom.PlayOneShot(emissorSom.clip);
+                        }
+                        if (inverterGiro == true)
+                        {
+                            giroAlvo = grausDeGiro;
+                        }
+                        else
+                        {
+                            giroAlvo = -grausDeGiro;
+                        }
                     }
                     else
                     {
-                        giroAlvo = -grausDeGiro;
-                    }
-                }
-                else
-                {
-                    if (Sons.somFechar != null)
-                    {
-                        emissorSom.pitch = Sons.velSomFechar;
-                        emissorSom.clip = Sons.somFechar;
-                        emissorSom.PlayOneShot(emissorSom.clip);
-                    }
-                    if (inverterGiro == true)
-                    {
-                        giroAlvo = 0.0f;
-                    }
-                    else
-                    {
-                        giroAlvo = 0.0f;
+                        if (Sons.somFechar != null)
+                        {
+                            emissorSom.pitch = Sons.velSomFechar;
+                            emissorSom.clip = Sons.somFechar;
+                            emissorSom.PlayOneShot(emissorSom.clip);
+                        }
+                        if (inverterGiro == true)
+                        {
+                            giroAlvo = 0.0f;
+                        }
+                        else
+                        {
+                            giroAlvo = 0.0f;
+                        }
                     }
                 }
             }
-            if (Input.GetKeyDown(TeclaAbrir) && estaTrancada == true)
+
+            if (mouseDentroDoObjeto == true)
             {
-                ChecarSeTemAChave();
+                if (Input.GetMouseButtonDown(0) && estaTrancada == true)
+                {
+                    ChecarSeTemAChave();
+                }
             }
         }
+
         giroAtual = Mathf.Lerp(giroAtual, giroAlvo, Time.deltaTime * velocidadeDeGiro);
     }
 
@@ -223,6 +235,15 @@ public class Porta : MonoBehaviour
             yield return new WaitForSeconds(tempoTexto);
             TextoTrancado.enabled = false;
         }
+    }
+
+    void OnMouseEnter()
+    {
+        mouseDentroDoObjeto = true;
+    }
+    void OnMouseExit()
+    {
+        mouseDentroDoObjeto = false;
     }
 }
 
