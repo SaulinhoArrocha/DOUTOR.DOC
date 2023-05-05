@@ -49,6 +49,10 @@ public class Porta : MonoBehaviour
 
     bool mouseDentroDoObjeto;
 
+    public Transform acessoChave;
+    public GameObject chaveMala;
+    public GameObject chaveCamera;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -121,7 +125,7 @@ public class Porta : MonoBehaviour
                 temAChave = true;
             }
         }
-        if (temAChave == true)
+        if (temAChave == true && acessoChave.gameObject.activeSelf)
         {
             estaTrancada = false;
             if (Sons.somDestrancar != null)
@@ -158,7 +162,7 @@ public class Porta : MonoBehaviour
         {
             if(mouseDentroDoObjeto == true)
             {
-                if (Input.GetMouseButtonDown(0) && estaTrancada == false)
+                if (Input.GetMouseButtonDown(0) && estaTrancada == false && acessoChave.gameObject.activeSelf)
                 {
                     estaFechada = !estaFechada;
                     //
@@ -178,6 +182,10 @@ public class Porta : MonoBehaviour
                         {
                             giroAlvo = -grausDeGiro;
                         }
+
+                        Destroy(chaveMala);
+                        chaveCamera.SetActive(false);
+
                     }
                     else
                     {

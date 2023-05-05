@@ -6,12 +6,9 @@ public class ProteinaMcoleta : MonoBehaviour
 {
     public GameObject proteinaMmala;
 
-    bool verificarPM = false;
-
     void OnMouseDown()
     {
         Destroy(gameObject);
         proteinaMmala.SetActive(true);
-        verificarPM = true;
     }
 }

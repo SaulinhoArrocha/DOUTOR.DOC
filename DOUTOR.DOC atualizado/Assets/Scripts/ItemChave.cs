@@ -18,6 +18,8 @@ public class ItemChave : MonoBehaviour
     Chaves _listaDeChaves;
     bool jaPegou;
 
+    public GameObject chaveMala;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -71,7 +73,10 @@ public class ItemChave : MonoBehaviour
             emissorDeSom.PlayOneShot(emissorDeSom.clip);
         }
         yield return new WaitForSeconds(3);
+
+        chaveMala.SetActive(true);
         Destroy(gameObject);
+
     }
 
     void OnMouseEnter()
