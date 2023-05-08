@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class AcertouMorcego : MonoBehaviour
 {
-    public GameObject morcegoMala, morcegoFinal, morcegoCamera, teste;
+    public GameObject morcegoMala, morcegoFinal, morcegoCamera;
 
     public Transform carta;
     public Transform morcego;
     public Transform mascara;
     public Transform coroa;
+    [SerializeField] private Animator Colunas;
 
     private void OnMouseDown()
     {
@@ -19,13 +20,13 @@ public class AcertouMorcego : MonoBehaviour
 
         if ((carta.gameObject.activeSelf) && (morcego.gameObject.activeSelf) && (mascara.gameObject.activeSelf) && (coroa.gameObject.activeSelf))
         {
-            teste.SetActive(true);
 
 
             Destroy(gameObject);
             Destroy(morcegoMala);
             morcegoCamera.SetActive(false);
 
+            Colunas.SetBool("Open", true);
 
         }
         else

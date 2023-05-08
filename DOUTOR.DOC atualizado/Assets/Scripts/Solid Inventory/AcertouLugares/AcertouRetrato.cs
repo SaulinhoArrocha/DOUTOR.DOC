@@ -5,6 +5,7 @@ using UnityEngine;
 public class AcertouRetrato : MonoBehaviour
 {
     public GameObject retratoMala, retratoFinal, rretratoCamera;
+    [SerializeField] private Animator PortaArmario; 
 
     private void OnMouseDown()
     {
@@ -12,6 +13,7 @@ public class AcertouRetrato : MonoBehaviour
         Destroy(retratoMala);
         rretratoCamera.SetActive(false);
         retratoFinal.SetActive(true);
+        PortaArmario.SetBool("Open", true); 
 
     }
 }

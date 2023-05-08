@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class rotacao : MonoBehaviour
+public class AcessoMap : MonoBehaviour
 {
     bool mouseDentroDoObjeto; 
-    public GameObject colunas; 
+    public GameObject Map; 
 
     void Start()
     {
@@ -18,7 +18,7 @@ public class rotacao : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                colunas.transform.Rotate (0, 90, 0); 
+                Map.SetActive(true); 
   
             }
 

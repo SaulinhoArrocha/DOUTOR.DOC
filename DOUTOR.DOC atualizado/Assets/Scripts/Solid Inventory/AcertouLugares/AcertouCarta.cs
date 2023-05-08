@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class AcertouCarta : MonoBehaviour
 {
-    public GameObject cartaMala, cartaFinal, cartaCamera, teste;
+    public GameObject cartaMala, cartaFinal, cartaCamera;
 
     public Transform carta;
     public Transform morcego;
     public Transform mascara;
     public Transform coroa;
+    [SerializeField] private Animator Colunas;
 
     private void OnMouseDown()
     {
@@ -18,14 +19,14 @@ public class AcertouCarta : MonoBehaviour
 
         if ((carta.gameObject.activeSelf) && (morcego.gameObject.activeSelf) && (mascara.gameObject.activeSelf) && (coroa.gameObject.activeSelf))
         {
-            teste.SetActive(true);
 
 
             Destroy(gameObject);
             Destroy(cartaMala);
             cartaCamera.SetActive(false);
 
-
+            Colunas.SetBool("Open", true); 
+            
         }
         else
         {
