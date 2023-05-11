@@ -6,6 +6,7 @@ public class ProteinaSpikeColeta : MonoBehaviour
 {
     public GameObject proteinaSpikeMala;
 
+
     void OnMouseDown()
     {
         Destroy(gameObject);

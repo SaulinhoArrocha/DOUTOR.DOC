@@ -9,6 +9,6 @@ public class ColetarObjeto : MonoBehaviour
     void OnMouseDown()
     {
         Destroy(gameObject); 
-        ativarObjeto.SetActive(true);
+        ativarObjeto.SetActive(true); 
     }
 }
