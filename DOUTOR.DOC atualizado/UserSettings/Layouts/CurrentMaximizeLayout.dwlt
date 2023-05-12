@@ -86,7 +86,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -223,10 +223,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 702}
-      m_SelectedIDs: 6008ffff
-      m_LastClickedID: -63392
-      m_ExpandedIDs: 6008ffff54faffff0c5d00006e5d0000d65d0000225e00003c6000006c650000366800009e680000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: aa7cfffffafaffff985d0000d05f0000226200006c680000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -242,7 +242,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 13}
+        m_ClientGUIView: {fileID: 5}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -503,9 +503,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -9.237066, y: 4.000083, z: -34.058296}
+    m_Target: {x: -0.8753371, y: -26.962852, z: 41.474434}
     speed: 2
-    m_Value: {x: -9.237066, y: 4.000083, z: -34.058296}
+    m_Value: {x: -0.8753371, y: -26.962852, z: 41.474434}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -552,13 +552,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.004842363, y: 0.9829226, z: -0.1822264, w: -0.026252436}
+    m_Target: {x: 0.539434, y: 0.03534663, z: -0.022648405, w: 0.8410153}
     speed: 2
-    m_Value: {x: -0.0005117093, y: 0.98010063, z: -0.19848298, w: -0.0026488395}
+    m_Value: {x: 0.5394184, y: 0.035345607, z: -0.02264775, w: 0.8409909}
   m_Size:
-    m_Target: 18.879293
+    m_Target: 31.88899
     speed: 2
-    m_Value: 18.879293
+    m_Value: 31.88899
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -817,13 +817,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites/GUI
+    - Assets/Scripts/Solid Inventory/ScriptsColeta
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sprites/GUI
+  - Assets/Scripts/Solid Inventory/ScriptsColeta
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Saulynho\Documents\Repositorio\DOUTOR.DOC\DOUTOR.DOC
     atualizado
@@ -831,9 +831,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 250}
-    m_SelectedIDs: 88580300
-    m_LastClickedID: 219272
-    m_ExpandedIDs: 00000000ee7f0000f07f0000f27f0000f47f0000f67f0000f87f0000fa7f0000ba80000004810000609c0300049e030000ca9a3bffffff7f
+    m_SelectedIDs: 1e820000
+    m_LastClickedID: 33310
+    m_ExpandedIDs: 00000000ea800000ec800000ee800000f0800000f2800000f4800000f6800000f8800000c4810000008200003682000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -849,7 +849,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -861,7 +861,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ee7f0000f07f0000f27f0000f47f0000f67f0000f87f0000fa7f00000481000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000ea800000ec800000ee800000f0800000f2800000f4800000f6800000f8800000008200003682000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -886,8 +886,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 6008ffff
-    m_LastClickedInstanceID: -63392
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:

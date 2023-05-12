@@ -19,6 +19,7 @@ public class ItemChave : MonoBehaviour
     bool jaPegou;
 
     public GameObject chaveMala;
+    public GameObject imagem;
 
     // Start is called before the first frame update
     void Start()
@@ -76,6 +77,7 @@ public class ItemChave : MonoBehaviour
 
         chaveMala.SetActive(true);
         Destroy(gameObject);
+        imagem.SetActive(true);
 
     }
 
