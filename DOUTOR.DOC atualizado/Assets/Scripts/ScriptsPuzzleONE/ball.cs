@@ -6,6 +6,7 @@ public class ball : MonoBehaviour
 {
     public Transform pauseMenu;
     public Transform vencedor;
+    public GameObject seguraVirus;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,8 @@ public class ball : MonoBehaviour
             {
                 pauseMenu.gameObject.SetActive(true);
                 Time.timeScale = 0;
+                seguraVirus.SetActive(true);
+
             }
         }
         else if(other.name == "Destino")
